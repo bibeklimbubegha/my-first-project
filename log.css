@@ -1,0 +1,197 @@
+/* style.css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+body{
+
+}
+.banner {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/webbb.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(84, 150, 139);
+    position: relative;
+    color: white;
+    padding: 20px 5%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.logo span {
+    color: #4a90e2;
+}
+
+.sidebar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #4a90e2;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background-color: #4a90e2;
+    color: white;
+    border: 2px solid #4a90e2;
+    margin-right: 10px;
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    color: #333;
+}
+
+.btn-large {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    margin-top: 20px;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 600px;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.mobile-menu {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+/* Replace your existing .socials class with this: */
+/* Replace your .social-links class with this */
+.social-links {
+    position: absolute;
+    bottom: 40px;
+    left: 50%; /* Start from center */
+    transform: translateX(-50%); /* Adjust to exact center */
+    text-align: left;
+    width: 100%; /* Full width for proper centering */
+    z-index: 10;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: left; /* Center the icons */
+    gap: 20px; /* Space between icons */
+    margin-top: 15px; /* Space between heading and icons */
+}
+
+/* Keep all other existing styles the same */
+.social-links h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+.social-icons a {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+}
+
+.social-icons i {
+    font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links, .nav-buttons {
+        display: none;
+    }
+    
+    .mobile-menu {
+        display: block;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
